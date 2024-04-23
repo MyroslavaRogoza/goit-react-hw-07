@@ -1,9 +1,11 @@
 export const initialState = {
-    contacts: {
-      items: [],
-    },
-    filters: {
-      name: "",
-    },
-  };
+  contacts: {
+    items: [],
+    loading: false,
+    error: null
+  },
+  filters: {
+		name: ""
+	}
+}
   
