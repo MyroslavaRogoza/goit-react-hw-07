@@ -23,13 +23,10 @@ const ContactForm = () => {
     const finalFormContact = {
       ...formContact,
     };
-
-    console.log(finalFormContact);
     dispatch(addContact(finalFormContact));
   }
 
   const handleSubmit = (values, actions) => {
-    console.log(values);
     onAddContact(values);
     actions.resetForm();
   };
